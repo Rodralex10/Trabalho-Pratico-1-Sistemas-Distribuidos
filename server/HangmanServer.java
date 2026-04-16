@@ -235,12 +235,14 @@ public class HangmanServer {
 
             // Process guesses atomically
             synchronized (lock) {
+                boolean anyWrong = false;
                 for (PlayerHandler p : players) {
                     if (!p.connected) continue;
                     String guess = roundGuesses.get(p.id);
                     log("Player " + p.id + ": " + (guess != null ? "\"" + guess + "\"" : "(timeout)"));
-                    processGuess(p.id, guess);
+                    if (processGuess(p.id, guess)) anyWrong = true;
                 }
+                if (anyWrong) attemptsLeft--;  // at most one attempt lost per round
 
                 // Mask fully revealed through letters → all connected players win
                 if (new String(mask).equals(word)) {
@@ -275,16 +277,17 @@ public class HangmanServer {
     }
 
     // ── Guess processing ─────────────────────────────────────────────────
-    private void processGuess(int playerId, String guess) {
+    // Returns true if the guess was wrong (so the caller can track whether
+    // to decrement attempts once per round, not once per player).
+    private boolean processGuess(int playerId, String guess) {
         if (guess == null || guess.isEmpty()) {
-            attemptsLeft--;
-            return;
+            return true;
         }
         guess = guess.toLowerCase();
 
         if (guess.length() == 1) {
             char c = guess.charAt(0);
-            if (usedLetters.contains(c)) return;   // already used → skip
+            if (usedLetters.contains(c)) return false;   // already used → skip, no penalty
             usedLetters.add(c);
 
             boolean found = false;
@@ -294,13 +297,14 @@ public class HangmanServer {
                     found = true;
                 }
             }
-            if (!found) attemptsLeft--;
+            return !found;
         } else {
             // Full word guess
             if (guess.equals(word)) {
                 winnerIds.add(playerId);
+                return false;
             } else {
-                attemptsLeft--;
+                return true;
             }
         }
     }
