@@ -16,8 +16,8 @@ public class HangmanServer {
     private static final long ROUND_TIMEOUT_MS  = 30_000;
 
     private static final String[] WORDS = {
-        "abacate",     "abacaxi",     "academia",    "alimento",    "amizade",
-        "animal",      "arquivo",     "aventura",    "banheiro",    "basquete",
+        "abacate",     "ananás",      "academia",    "alimento",    "amizade",
+        "animal",      "arquivo",     "aventura",    "sanita",      "basquetebol",
         "batata",      "biologia",    "borboleta",   "borracha",    "caderno",
         "campeonato",  "caneta",      "castelo",     "cavaleiro",   "celula",
         "cenoura",     "cerebro",     "cidade",      "ciencia",     "cobertor",
@@ -26,7 +26,7 @@ public class HangmanServer {
         "empresa",     "energia",     "escada",      "escola",      "escudo",
         "espada",      "espaco",      "estomago",    "estrada",     "estrela",
         "estudante",   "exercicio",   "floresta",    "futebol",     "galaxia",
-        "galinha",     "geladeira",   "ginasio",     "goleiro",     "governo",
+        "galinha",     "frigorifico", "ginasio",     "ferreiro",    "governo",
         "hospital",    "internet",    "jardim",      "joelho",      "laranja",
         "legumes",     "medalha",     "memoria",     "mercado",     "mochila",
         "monitor",     "montanha",    "museu",       "natacao",     "natureza",
@@ -34,7 +34,7 @@ public class HangmanServer {
         "planeta",     "ponte",       "predio",      "princesa",    "professor",
         "programa",    "prova",       "pulmao",      "quarto",      "quimica",
         "servidor",    "sistema",     "teclado",     "telhado",     "tenis",
-        "tesouro",     "tomate",      "tornozelo",   "trabalho",    "travesseiro",
+        "tesouro",     "tomate",      "tornozelo",   "trabalho",    "almofada",
         "varanda",     "voleibol",    "braco",       "cabeca",      "protocolo"
     };
 
