@@ -34,7 +34,7 @@ java client.HangmanClient localhost 12345
 ## Como Jogar
 
 1. Iniciar o servidor
-2. Conectar 2-4 clientes (lobby de 20 segundos)
+2. Conectar 2-4 users (lobby de 20 segundos)
 3. O jogo começa automaticamente quando o lobby fecha
 4. Em cada ronda, cada jogador envia um palpite:
    - **Uma letra** — revela posições se correta, senao perde 1 tentativa.
