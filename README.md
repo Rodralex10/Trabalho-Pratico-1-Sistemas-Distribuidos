@@ -35,10 +35,10 @@ java client.HangmanClient localhost 12345
 
 1. Iniciar o servidor
 2. Conectar 2-4 clientes (lobby de 20 segundos)
-3. O jogo comeca automaticamente quando o lobby fecha
+3. O jogo começa automaticamente quando o lobby fecha
 4. Em cada ronda, cada jogador envia um palpite:
-   - **Uma letra** — revela posicoes se correta, senao perde 1 tentativa
-   - **Palavra completa** — se correta, ganha; se errada, perde 1 tentativa
+   - **Uma letra** — revela posições se correta, senao perde 1 tentativa.
+   - **Palavra completa** — se correta, ganha; se errada, perde 1 tentativa.
 5. O jogo termina quando:
    - Um jogador adivinha a palavra (esse jogador ganha)
    - Todas as letras sao reveladas (todos os jogadores ganham)
