@@ -7,7 +7,7 @@ Este trabalho prático corresponde ao Jogo da Forca Multijogador em Java com arq
 
 ```
 hangman/
-├── server/HangmanServer.java   # Servidor TCP multithreaded
+├── server/HangmanServer.java   # Servidor TCP 
 ├── client/HangmanClient.java   # Cliente com interface terminal
 └── README.md
 ```
