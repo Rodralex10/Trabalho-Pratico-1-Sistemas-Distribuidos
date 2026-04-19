@@ -1,6 +1,6 @@
 # Hangman Multiplayer
 
-Neste Git encontra o Trabalho Prático 1 realizado por Rodrigo Lourenço e Rodrigo Talhas do curso de Engenharia Informática na cadeira de Sistemas Distribuidos.
+Neste Git encontra-se o Trabalho Prático 1 realizado por Rodrigo Lourenço e Rodrigo Talhas do curso de Engenharia Informática na cadeira de Sistemas Distribuidos.
 Este trabalho prático corresponde ao Jogo da Forca Multijogador em Java com arquitetura cliente-servidor TCP/IP.
 
 ## Estrutura
