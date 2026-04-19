@@ -1,6 +1,7 @@
 # Hangman Multiplayer
 
-Projeto academico de Sistemas Distribuidos (UBI). Jogo da Forca multijogador em Java com arquitetura cliente-servidor TCP/IP.
+Neste Git encontra o Trabalho Prático 1 realizado por Rodrigo Lourenço e Rodrigo Talhas do curso de Engenharia Informática na cadeira de Sistemas Distribuidos.
+Este trabalho prático corresponde ao Jogo da Forca Multijogador em Java com arquitetura cliente-servidor TCP/IP.
 
 ## Estrutura
 
